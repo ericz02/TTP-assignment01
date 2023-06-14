@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+
+        button[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+    <!-- javascript -->
+    <script>
+        fakeSubmit = () => {
+            alert("Fake submit button clicked and does absolutely nothing!");
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <h2>Contact Us</h2>
+
+        <form>
+            <label for="name">Name:</label>
+
+            <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                placeholder="Your name" 
+            />
+
+            <label for="email">Email:</label>
+
+            <input 
+                type="text" 
+                id="email" 
+                name="email" 
+                placeholder="Your email" 
+            />
+
+            <label for="message">
+                Message:
+            </label>
+
+            <textarea 
+                id="message" 
+                name="message" 
+                placeholder="Your message" 
+                rows="5" 
+                required
+            >
+            </textarea>
+            
+            <!-- onclick that does nothing -->
+            <button onclick="fakeSubmit()">Submit</button>
+            
+        </form>
+
+    </div>
+</body>
+
+</html>
