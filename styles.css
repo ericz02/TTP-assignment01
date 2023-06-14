@@ -36,3 +36,17 @@
     width:60px;
     height: 60px;
 }
+#list{
+    background-color: rgb(247, 245, 242);
+    display:flex;
+    flex-direction: column;
+    margin: 10px 70px 70px 70px;
+}
+.listElements{
+padding: 20px 20px;
+}
+#linkText{
+    font-size: 20px;
+    display:flex;
+    justify-content: center;
+}
