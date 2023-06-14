@@ -37,7 +37,34 @@
             border-radius: 4px;
             cursor: pointer;
         }
+
+        .form {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+            padding-right: 40px;
+        }
+
+        #name, email, message {
+            margin-bottom: 30px;
+        }
+
+        #submit {
+            margin-top: 10px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            background: slateblue;
+            color: white;
+            padding: 10px;
+        }
+
+        .messagebox {
+            margin-bottom: 30px;
+        }
+
     </style>
+    
     <!-- javascript -->
     <script>
         fakeSubmit = () => {
@@ -51,16 +78,16 @@
 
         <h2>Contact Us</h2>
 
-        <form>
+        <form class="form">
             <label for="name">Name:</label>
 
             <input type="text" id="name" name="name" placeholder="Your name" />
 
             <label for="email">Email:</label>
 
-            <input type="text" id="email" name="email" placeholder="Your email" />
+            <input class="messagebox" type="text" id="email" name="email" placeholder="Your email" />
 
-            <label for="message">
+            <label id="message" for="message">
                 Message:
             </label>
 
@@ -68,7 +95,7 @@
             </textarea>
 
             <!-- onclick that does nothing -->
-            <button onclick="fakeSubmit()">Submit</button>
+            <button id="submit" onclick="fakeSubmit()">Submit</button>
 
         </form>
 
