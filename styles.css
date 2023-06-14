@@ -54,3 +54,10 @@ padding: 20px 20px;
 .treeIcon{
 padding:10px 10px;
 }
+#navbarSupportedContent{
+    display:flex;
+    justify-content: space-around;
+}
+.navbar-brand{
+    padding: 0px 100px;
+}
